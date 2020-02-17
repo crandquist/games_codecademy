@@ -30,9 +30,9 @@ def coin_flip():
 def heads_or_tails():
     h_or_t = input("Call it: heads or tails?\n")
     if h_or_t == "heads":
-        return "heads"
+        return 1
     elif h_or_t == "tails":
-        return "tails"
+        return 2
     else:
         print("Let's try that again. Please enter 'heads' or 'tails'.\n")
         heads_or_tails()
