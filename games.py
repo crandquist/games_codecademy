@@ -3,6 +3,9 @@ import random
 money = 100
 
 #Write your game of chance functions here
+def pick_game():
+    pass
+
 def coin_flip():
     print("Welcome to coin flip!")
     print("In this game you will decide whether you want to bet heads or tails and how much money you are betting on.")
@@ -26,7 +29,7 @@ def coin_flip():
         return -int_wager
     
 
-
+    #Helper function for coin_flip game.
 def heads_or_tails():
     h_or_t = input("Call it: heads or tails?\n")
     if h_or_t == "heads":
@@ -37,10 +40,25 @@ def heads_or_tails():
         print("Let's try that again. Please enter 'heads' or 'tails'.\n")
         heads_or_tails()
 
+    #Helper function to take user input on bet amount.
 def bet():
     money = input("How much would you like to bet on the game?\n")
     return money
 
+#Cho-Han game functions will be below.
+def cho_han():
+    print("Welcome to 'Cho Han'!")
+    print("In this game we will be rolling two dice and adding the results together. ")
+    print("If you can guess correctly if the number is even or odd then you win!")
+    print("Let's begin!")
+    wager = bet()
+    int_wager = int(wager)
+    e_or_o = input("Do you bet the result is going to be even or odd?")
+
+
+def dice_roll():
+    roll = random.randint(1, 6)
+    return roll
 
 
 #Call your game of chance functions here
