@@ -10,7 +10,7 @@ def balance():
     print("You have {0} dollars.".format(money))
 
 def try_again(game):
-    y_or_n = print("Would you like to try again? Enter 'y' or 'n'")
+    y_or_n = input("Would you like to try again? Enter 'y' or 'n'")
     if y_or_n == "y":
         game()
     elif y_or_n == "n":
