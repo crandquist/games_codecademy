@@ -19,7 +19,7 @@ def try_again(game):
         if new_game == "y":
             pick_game()
         elif new_game == "n":
-            return (print "See you next time!")
+            return print ("See you next time!")
         else:
             print("Whoops. Please enter 'y' or 'n'.")
             try_again(game)
@@ -45,12 +45,12 @@ def coin_flip():
     
     if h_or_t == flip:
         print("Congratulations! You won {0} dollars!".format(wager))
-        money += int_wager
-        balance()
+        #money += int_wager
+        #balance()
 
     else:
         print("You lost {0} dollars. Better luck next time!".format(wager))
-        money -= int_wager
+        #money -= int_wager
         print("You have {0} dollars!".format(money))
     
 
