@@ -1,6 +1,6 @@
 import random
 
-money = 100
+#money = 100
 
 #Write your game of chance functions here
 def pick_game():
@@ -19,7 +19,8 @@ def try_again(game):
         if new_game == "y":
             pick_game()
         elif new_game == "n":
-            return print ("See you next time!")
+            print ("See you next time!")
+            return
         else:
             print("Whoops. Please enter 'y' or 'n'.")
             try_again(game)
@@ -104,6 +105,7 @@ def dice_roll():
     roll = random.randint(1, 6)
     return roll
 
+money = 100
 
 #Call your game of chance functions here
 coin_flip()
